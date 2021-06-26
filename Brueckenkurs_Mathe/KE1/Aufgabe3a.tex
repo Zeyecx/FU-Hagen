@@ -1,0 +1,36 @@
+Wir nehmen an, dass alle Elemente in $\mathbb{N}$ liegen:\\
+\begin{eqnarray}
+	M_1 = \{x \in \mathbb{N} | x \in M_1 \}\\
+	M_2 = \{x \in \mathbb{N} | x \in M_2 \}
+\end{eqnarray}
+Aus der Vereinigung können wir Rückschlüsse auf die Grundmenge ziehen: \\
+
+\begin{eqnarray}
+	M_1 \cup M_2 = \Omega = \left\{ 1,2,3,4,5,6,7 \right\}
+\end{eqnarray}
+
+Wenn man nun die Differenz der beiden Mengen betrachtet wird deutlich, dass $M_1$ eine größere Kardinalität aufweist als $M_2$:
+\begin{eqnarray}
+	\vert M_1 \setminus M_2 \vert > \vert M_2 \setminus M_1 \vert\\
+	\vert \{2,4,6\} \vert > \vert \varnothing \vert \\
+	3 > 0
+\end{eqnarray}
+Dadurch sehen wir, dass es mehr Elemente in $M_1$ gibt als in $M_2$. \\
+Um weitere Rückschlüsse auf $M_1$ und $M_2$ zu bekommen, ziehen wir die Schnittmenge der beiden heran. 
+\begin{eqnarray}
+	M_1 \cap M_2 = \left\{x \in \mathbb{N} \vert x \in M_1 \land x \in M_2 \right\}
+\end{eqnarray}
+Daraus kann nun $M_1$ abgeleitet werden.: 
+\begin{eqnarray}
+	M_1 = (M_1 \cap M_2) \cup  ( M_1 \setminus M_2) \\
+	M_1 = \left\{ 1,3,5,7 \right\} \cup \left\{ 2,4,6 \right\}\\
+	M_1 = \left\{ 1,2,3,4,5,6,7 \right\}
+\end{eqnarray}
+Da nun $M_1$ bekannt ist, können wir auch $M_2$ ermitteln.
+\begin{eqnarray}
+	M_2 \cap M_1 = \left\{ 1,3,5,7       \right\}\\
+	M_2 = \left\{ 1,3,5,7       \right\}
+\end{eqnarray}
+Diese Aussage ist wahr, da $M_1$ als $\Omega$ (Grundmenge) angesehen werden kann.
+
+

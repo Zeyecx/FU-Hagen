@@ -1,0 +1,40 @@
+Es gilt zu zeigen, dass gilt: \\
+$\lnot ( \lnot A \land \lnot C ) \lor ( A \land (\lnot B \lor A)) \equiv A \lor C$\\
+
+Für $\lnot ( \lnot A \land \lnot C ) \lor ( A \land (\lnot B \lor A)) $:\\
+\begin{center}
+\begin{tabular}[h]{c|c|c|c}
+ $A$ & $B$ & $C$ &  $\lnot ( \lnot A \land \lnot C ) \lor ( A \land (\lnot B \lor A))$ \\ 
+ \hline
+ 1 & 1 & 1 & (~~1~~~0~~~0~~~0~~~*1~~~1~~0~~~1~~)\\
+ 1 & 1 & 0 & (~~1~~~0~~~0~~~1~~~*1~~~1~~~0~~~1~~)\\
+ 1 & 0 & 1 & (~~1~~~0~~~0~~~0~~~*1~~~1~~~1~~~1~~)\\
+ 1 & 0 & 0 & (~~1~~~0~~~0~~~1~~~*1~~~1~~~1~~~1~~)\\
+ 0 & 1 & 1 & (~~1~~~1~~~0~~~0~~~*1~~~0~~~0~~~0~~)\\
+ 0 & 1 & 0 & (~~0~~~1~~~1~~~1~~~*0~~~0~~~0~~~0~~)\\
+ 0 & 0 & 1 & (~~1~~~1~~~0~~~0~~~*1~~~0~~~1~~~1~~)\\
+ 0 & 0 & 0 & (~~0~~~1~~~1~~~1~~~*0~~~0~~~1~~~1~~)\\
+
+\end{tabular}
+\end{center}
+\vspace{2cm}
+
+Für $A \lor C$
+\begin{center}
+	\begin{tabular}[h]{c|c|c|c}
+		$A$ & $B$ &  $C$ & $A \lor C$ \\ 
+		\hline
+		1 & 1 & 1 & 1\\
+		1 & 1 & 0 & 1\\
+		1 & 0 & 1 & 1\\
+		1 & 0 & 0 & 1\\
+		0 & 1 & 1 & 1\\
+		0 & 1 & 0 & 0\\
+		0 & 0 & 1 & 1\\
+		0 & 0 & 0 & 0\\
+	\end{tabular}
+\end{center}
+
+\vspace{1cm}
+$ \left(1,1,1,1,1,1,0,1,0\right) \equiv \left(1,1,1,1,1,1,0,1,0\right) $\\
+Die Aussagen sind äquivalent.

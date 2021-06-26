@@ -1,0 +1,63 @@
+Bestimmen Sie die Menge: 
+\begin{eqnarray}
+	\left(A \cap B \cap C \cap D \right) \times \left(\mathbb{N}_0 \times \mathbb{N}_0 \right)
+\end{eqnarray}
+
+Lösung + Punkte aus 5a: \\
+
+
+Definition $\mathbb{N}_0$:
+\begin{eqnarray}
+	N_0 = \left\{x \in \mathbb{Z} \vert x \ge 0 \right\}
+\end{eqnarray}
+
+Allgemein gilt daher:
+\begin{eqnarray}
+	\left(A \cap B \cap C \cap D \right)  = E \vert  \text{~~~aus a~}\\
+	\left(A \cap B \cap C \cap D \right) \times \left(N_0 \times N_0 \right)\\
+	E \times (\{x\in \mathbb{Z}\vert x \ge 0\}\times \{x\in \mathbb{Z}\vert x \ge 0\}) 
+\end{eqnarray}
+
+Betrachten wir nun $A$ im Zahlenbereich $\mathbb{N}_0$ fallen uns folgende Tupel auf: \\
+\begin{eqnarray}
+	\left\{ (-4,0);(0,4); (0,-4); (4,0)\right\}\in A_{\mathbb{N}_0} 
+\end{eqnarray}
+
+Betrachten wir nun $B$ im Zahlenbereich $\mathbb{N}_0$ fällt auf, dass der Bereich der Menge durch die positive Y-Achse und durch den Term $\sqrt(x)$ nach unten beschränkt ist. \\
+
+Betrachten wir nun $C$ im Zahlenbereich $\mathbb{N}_0$ fällt auf, dass der Bereich der Menge durch die positive Y-Achse und durch den Term $-\dfrac{1}{2}x+3$ nach unten beschränkt ist. \\
+
+Betrachten wir nun $D$ im Zahlenbereich $\mathbb{N}_0$ fällt auf, dass der Bereich der Menge durch die positive Y-Achse und durch den Term $x^2$ nach unten beschränkt ist.\\
+
+Man kann dies Sich die gesuchte Flächte recht solide im Kopf vorstellen. $A$ stellt die Grundfläche ($\Omega$) dar. Diese wird dann durch die Mengen $A \cdots D$ begrenzt. So begrenzt $C$ von oben und $B$ und $D$ \An{rechts }und \An{links} \\
+
+Die Abgeschlossene Menge hat folglich folgende Punkte in $N_0$:\\ 
+
+\begin{eqnarray}
+	E= \left\{ (1,3); (0,4) \right\} 
+\end{eqnarray}
+
+\clearpage
+
+Für $(1,3)$ aus $\left(\mathbb{N}_0 \times \mathbb{N}_0\right)$:
+\begin{itemize}
+	\item A: $ x^2 +y^2 \rightarrow 1^2 + 3^2 \le 16$
+	\item B: $ y > \sqrt{x} \rightarrow 3 > \sqrt{1}$
+	\item C: $y > -\dfrac{1}{2}\cdot x+3 \rightarrow 3 > -\dfrac{1}{2} \cdot 1 +3 \rightarrow 3 > 2.5$
+	\item D: $y \ge x^2 \rightarrow 3 \ge 1^2$
+\end{itemize}
+$\square$
+
+\vspace{2cm}
+Für $(0,4)$ aus $\left(\mathbb{N}_0 \times \mathbb{N}_0\right)$:
+\begin{itemize}
+	\item 
+	A: $ x^2 +y^2 \rightarrow 0^2 + 4^2 \le 16$
+	\item 
+	B: $ y > \sqrt{x} \rightarrow 4 > \sqrt{0}$
+	\item 
+	C: $y > -\dfrac{1}{2}\cdot x+3 \rightarrow 4 > -\dfrac{1}{2} \cdot 0 +3 \rightarrow 4 > 3$
+	\item
+	D: $y \ge x^2 \rightarrow 4 \ge 0^2 $ 
+\end{itemize}
+$\square$

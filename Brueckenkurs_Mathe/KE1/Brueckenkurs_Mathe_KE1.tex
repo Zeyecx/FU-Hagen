@@ -1,0 +1,162 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{fancyheadings}
+\usepackage[ngerman,german]{babel}
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[active]{srcltx}
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{struktex}
+\usepackage{hyperref}
+
+% Führende Null mitziehen
+\newcommand{\leadingzero}[1]{\ifnum #1<10 0\the#1\else\the#1\fi}
+\renewcommand{\today}{\leadingzero{\day}.\leadingzero{\month}.\the\year}     % DD.MM.YYYY
+ 
+ % Anfuehrungszeichen
+\newcommand{\An}[1]{\glqq #1\grqq{}} 
+ 	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% EDIT THIS PART %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Fach}{Brückenkurs Mathe}
+\newcommand{\Modulnummer}{09804}
+\newcommand{\Name}{Jonathan Skopp}
+\newcommand{\Datum}{\today}
+\newcommand{\Matrikelnummer}{3301729}
+\newcommand{\Semester}{WS 20/21}
+\newcommand{\Uebungsblatt}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\setlength{\parindent}{0em}
+\topmargin -1.0cm
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{6.0in}
+
+
+\newcommand{\Aufgabe}[1]{
+  {
+  \vspace*{0.5cm}
+  \textsf{\textbf{Aufgabe #1}}
+  \vspace*{0.2cm}
+  
+  }
+}
+%%%%%%%%%%%%%%
+\hypersetup{
+    pdftitle={\Fach{}: Einsendeaufgaben \Uebungsblatt{}},
+    pdfauthor={\Name},
+    pdfborder={0 0 0}
+}
+
+
+\title{Kurseinheit  \Uebungsblatt{}}
+\author{\Name{}}
+
+\begin{document}
+\thispagestyle{fancy}
+\lhead{\sf \large \Fach{} - \Modulnummer \\ \small \Name{} - \Matrikelnummer{}}
+\rhead{\sf \Semester{} \\  Datum \today }
+\vspace*{0.2cm}
+\begin{center}
+\LARGE \sf \textbf{Einsendeaufgaben Kurseinheit \Uebungsblatt{}}
+\end{center}
+\vspace*{0.2cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Insert your solutions here %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Aufgabe{1}
+\input{Aufgabe1.tex}
+
+\begin{itemize}
+	\item[a)] 	
+		\input{Aufgabe1a.tex}
+	 \item[b)]
+	 	\input{Aufgabe1b.tex}
+	 \item[c)]
+	 	\input{Aufgabe1c.tex}
+	 \item[d)] 
+	 	\input{Aufgabe1d.tex}
+	 \item[e)] 
+	 	\input{Aufgabe1e.tex}
+\end{itemize}
+\clearpage
+
+\Aufgabe{2}
+\input{Aufgabe2.tex}\\
+\input{Aufgabe2a.tex}
+\clearpage
+
+\Aufgabe{3}
+\input{Aufgabe3.tex}\\
+\input{Aufgabe3a.tex}
+\clearpage
+
+
+\Aufgabe{4}
+\input{Aufgabe4.tex}\\
+
+\begin{itemize}
+	\item[i)] 	
+	\input{Aufgabe4i.tex}
+	\item[ii)]
+	\input{Aufgabe4ii.tex}
+	\item[iii)]
+	\input{Aufgabe4iii.tex}
+	\item[iv)] 
+	\input{Aufgabe4iv.tex}
+	\item[v)] 
+	\input{Aufgabe4v.tex}
+	\item[vi)] 
+	\input{Aufgabe4vi.tex}
+\end{itemize}
+\clearpage
+
+\Aufgabe{5}
+\input{Aufgabe5.tex}\\
+\begin{itemize}
+	\item[a)] 	
+	\input{Aufgabe5a.tex}
+	\item[b)]
+	\input{Aufgabe5b.tex}
+\end{itemize}
+\clearpage
+
+
+\Aufgabe{6}
+\input{Aufgabe6.tex}\\
+\begin{itemize}
+	\item[a)] 	
+	\input{Aufgabe6a.tex}
+	\item[b)]
+	\input{Aufgabe6b.tex}
+	\item[c)] 
+	\input{Aufgabe6c.tex}
+	\item[d)]
+	\input{Aufgabe6d.tex}
+\end{itemize}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

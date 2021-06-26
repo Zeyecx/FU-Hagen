@@ -1,0 +1,29 @@
+name: Build Brueckenkurs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "19 5 * * 3"
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          working_directory: ./Brueckenkurs_Mathe/KE1
+          root_file: Brueckenkurs_Mathe_KE1.tex
+
+      - name: Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: ./Brueckenkurs_Mathe/KE1/Brueckenkurs_Mathe_KE1.pdf 
